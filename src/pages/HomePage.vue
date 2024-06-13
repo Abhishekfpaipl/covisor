@@ -20,7 +20,7 @@
             <PriceSection v-observe />
         </div>
         <div class="">
-            <StarterPacks/>
+            <StarterPacks />
         </div>
         <div class="">
             <ImageWithText :title="title" :description="description" :image="image" :points="true" v-observe />
@@ -43,6 +43,9 @@
         <div class="">
             <WayToShare v-observe />
         </div>
+        <div class="">
+            <MiniFooter />
+        </div>
         <FooterBar v-observe />
     </div>
 </template>
@@ -62,6 +65,7 @@ import WhyChooseUs from '@/components/WhyChooseUs.vue'
 import PriceSection from '@/components/PriceSection.vue'
 import SalesFunnel from '@/components/SalesFunnel.vue'
 import RequestDemo from '@/components/RequestDemo.vue'
+import MiniFooter from '@/components/MiniFooter.vue'
 // import WorkingProcess from '@/components/WorkingProcess.vue'
 import StarterPacks from '@/components/StarterPacks.vue'
 
@@ -84,6 +88,7 @@ export default {
         RequestDemo,
         // WorkingProcess,
         StarterPacks,
+        MiniFooter,
     },
     data() {
         return {

@@ -71,6 +71,31 @@ const routes = [
     name: "CareerPage",
     component: () => import('@/pages/CareerPage.vue')
   },
+  {
+    path: "/pricing",
+    name: "StarterPricing",
+    component: () => import('@/pages/StarterPricing.vue')
+  },
+  {
+    path: "/demo",
+    name: "DemoPage",
+    component: () => import('@/pages/DemoPage.vue')
+  },
+  {
+    path: "/sales-category/:category",
+    name: "SaleCategoryPage",
+    component: () => import('@/pages/SaleCategoryPage.vue')
+  },
+  {
+    path: "/sales-funnel/:slug",
+    name: "SalesFunnelPage",
+    component: () => import('@/pages/SalesFunnelPage.vue')
+  },
+  {
+    path: "/test",
+    name: "TestPage",
+    component: () => import('@/pages/TestPage.vue')
+  },
 ];
 
 const router = createRouter({

@@ -42,7 +42,7 @@ export default {
                 {
                     id: 1,
                     show: false,
-                    imgr: 'img/users/1.png',
+                    imgr: '/img/users/1.png',
                     name: 'Ram',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -51,7 +51,7 @@ export default {
                 {
                     id: 2,
                     show: false,
-                    imgr: 'img/users/2.png',
+                    imgr: '/img/users/2.png',
                     name: 'Shyam',
                     company: 'XYz Pvt Ltd',
                     rating: '4.5',
@@ -60,7 +60,7 @@ export default {
                 {
                     id: 3,
                     show: false,
-                    imgr: 'img/users/3.png',
+                    imgr: '/img/users/3.png',
                     name: 'Nikhil',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -69,7 +69,7 @@ export default {
                 {
                     id: 4,
                     show: false,
-                    imgr: 'img/users/4.png',
+                    imgr: '/img/users/4.png',
                     name: 'Abhishek',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -78,7 +78,7 @@ export default {
                 {
                     id: 5,
                     show: false,
-                    imgr: 'img/users/5.png',
+                    imgr: '/img/users/5.png',
                     name: 'Rajan',
                     company: 'XYz Pvt Ltd',
                     rating: '4',
@@ -87,7 +87,7 @@ export default {
                 {
                     id: 6,
                     show: false,
-                    imgr: 'img/users/3.png',
+                    imgr: '/img/users/3.png',
                     name: 'Yogesh',
                     company: 'XYz Pvt Ltd',
                     rating: '4.5',
@@ -96,7 +96,7 @@ export default {
                 {
                     id: 7,
                     show: false,
-                    imgr: 'img/users/2.png',
+                    imgr: '/img/users/2.png',
                     name: 'Lokesh',
                     company: 'XYz Pvt Ltd',
                     rating: '4',
@@ -105,7 +105,7 @@ export default {
                 {
                     id: 8,
                     show: false,
-                    imgr: 'img/users/1.png',
+                    imgr: '/img/users/1.png',
                     name: 'Bhasker',
                     company: 'XYz Pvt Ltd',
                     rating: '3.5',
@@ -114,7 +114,7 @@ export default {
                 {
                     id: 9,
                     show: false,
-                    imgr: 'img/users/4.png',
+                    imgr: '/img/users/4.png',
                     name: 'Vivek',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -123,7 +123,7 @@ export default {
                 {
                     id: 10,
                     show: false,
-                    imgr: 'img/users/5.png',
+                    imgr: '/img/users/5.png',
                     name: 'Ankit',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -132,7 +132,7 @@ export default {
                 {
                     id: 11,
                     show: false,
-                    imgr: 'img/users/2.png',
+                    imgr: '/img/users/2.png',
                     name: 'Karan',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -141,7 +141,7 @@ export default {
                 {
                     id: 12,
                     show: false,
-                    imgr: 'img/users/1.png',
+                    imgr: '/img/users/1.png',
                     name: 'Rajat',
                     company: 'XYz Pvt Ltd',
                     rating: '4',
@@ -150,7 +150,7 @@ export default {
                 {
                     id: 13,
                     show: false,
-                    imgr: 'img/users/4.png',
+                    imgr: '/img/users/4.png',
                     name: 'Ajay',
                     company: 'XYz Pvt Ltd',
                     rating: '5',
@@ -159,7 +159,7 @@ export default {
                 {
                     id: 14,
                     show: false,
-                    imgr: 'img/users/2.png',
+                    imgr: '/img/users/2.png',
                     name: 'Vikas',
                     company: 'XYz Pvt Ltd',
                     rating: '5',

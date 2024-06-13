@@ -6,12 +6,12 @@
                 <router-link to="/">
                     <img :src="`${publicPath}${img}`" style="width: 100px;object-fit: contain;filter: invert(1)">
                 </router-link>
-                <p class="mb-0 fw-bold fs-2">Saleswik</p>
-                <p class="mb-2">Let's Get Wicked</p>
+                <p class="mb-0 fw-bold fs-2 text-uppercase">Sovisor</p>
+                <p class="mb-2 text-capitalize">solutions for business</p>
             </div>
             <div class="mb-3 text-start">
                 <p class="mb-2 fw-bold">Contact Us</p>
-                <p class="mb-2">Email : support@covisor.in</p>
+                <p class="mb-2">Email : support@sovisor.in</p>
                 <p class="mb-2">Mob no. : 8860012001</p>
                 <p class="mb-2">Address :  2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
             </div>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="bg-light text-center py-3 d-flex align-items-center justify-content-center">
-            <p class="text-dark mb-0"> Copyright © 2024 saleswik.com All rights reserved</p>
+            <p class="text-dark mb-0"> Copyright © 2024 sovisor.in All rights reserved</p>
         </div>
     </div>
 </template>
@@ -61,7 +61,7 @@ export default {
     data() {
         return {
             publicPath: process.env.BASE_URL,
-            img: "img/logo.png",
+            img: "img/logo.svg",
         }
     },
 }

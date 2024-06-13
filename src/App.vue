@@ -28,10 +28,16 @@ export default {
 }
 
 :root {
-  --bg-primary: red;
-  --bg-secondary: #EB5E28;
-  --bg-tertiary: #FEC007;
+  // 050F28
+  // 1A2A4E
+  --bg-primary: #02539E;
+  --bg-secondary: #02539E;
+  --bg-tertiary: #894718;
   --bg-forth: #FBF4F4;
+}
+
+.smaller {
+  font-size: 12px;
 }
 
 .cutout {
@@ -66,5 +72,17 @@ export default {
   border-bottom: 2px solid;
   border-color: var(--bg-secondary);
   border-image-slice: 1;
+}
+
+
+.before-enter {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

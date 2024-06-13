@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pt-5 mt-5">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -18,1075 +18,109 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
-                <table class="table table-borderless table-hover container-fluid" style="width: 100%">
-                    <thead class="border-bottom">
-                        <tr>
-                            <th></th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Essential</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Info Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">999</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Standard</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Business Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">1499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Advanced</p>
-                                <p class="lead fs-6 lh-1 mb-0">Catalog Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">2499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Ultimate</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Designer Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">3499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-start border-end">
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Domin</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal default_cursor_cs">.in Domain</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Email Id</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SSL Certificate</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Contact Form</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Mobile Responsive</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SEO friendly</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Google Location Map</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Direct Calling</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Social Links</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Whatsapp Connect</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Payment Detail</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Business Catelog</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Content Writing</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Update</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Brand Logo</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">Basic</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Development Time</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Customer Support</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Renewal Charges</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-borderless table-hover container-fluid" style="width: 100%">
+                        <thead class="border-bottom">
+                            <tr>
+                                <th></th>
+                                <th scope="col" class="border-end text-center" v-for="plan in plans"
+                                    :key="plan.id">
+                                    <p class="mb-0">{{ plan.title }} <sup>{{ plan.sup }}</sup></p>
+                                    <p class="mb-0 ">
+                                        <small class="smaller ">₹</small>
+                                        <small class="smaller">{{ plan.price }}</small>
+                                        <small class="smaller fw-normal">/-</small>
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-start border-end">
+                            <tr class="border-bottom" v-for="feature in features" :key="feature.id">
+                                <th class="pb-1 text-start">
+                                    <span class="fw-normal smaller">{{ feature.name }}</span>
+                                </th>
+                                <td class="pb-1 text-center" v-for="plan in plans" :key="plan.id">
+                                    <i v-if="plan.featuresIncluded.includes(feature.id)"
+                                        class="bi bi-check2 fs-5 text-success smaller"></i>
+                                    <i v-else-if="feature.name === 'Brand Logo' && plan.id === 4"
+                                        class="fw-normal">Basic</i>
+                                    <i v-else class="bi bi-dash fs-5 text-secondary"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+
+
+
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                <table class="table table-borderless table-hover container-fluid" style="width: 100%">
-                    <thead class="border-bottom">
-                        <tr>
-                            <th></th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Essential</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Info Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">999</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Standard</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Business Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">1499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Advanced</p>
-                                <p class="lead fs-6 lh-1 mb-0">Catalog Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">2499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Ultimate</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Designer Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">3499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-start border-end">
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Domin</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal default_cursor_cs">.in Domain</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Email Id</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SSL Certificate</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Contact Form</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Mobile Responsive</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SEO friendly</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Google Location Map</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Direct Calling</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Social Links</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Whatsapp Connect</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Payment Detail</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Business Catelog</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Content Writing</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Update</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Brand Logo</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">Basic</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Development Time</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Customer Support</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Renewal Charges</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-borderless table-hover container-fluid" style="width: 100%">
+                        <thead class="border-bottom">
+                            <tr>
+                                <th></th>
+                                <th scope="col" class="border-end text-center" v-for="plan in plans"
+                                    :key="plan.id">
+                                    <p class="mb-0">{{ plan.title }}</p>
+                                    <p class="mb-0 ">
+                                        <small class="">₹</small>
+                                        <small class="">{{ plan.price }}</small>
+                                        <small class="fw-normal">/-</small>
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-start border-end">
+                            <tr class="border-bottom" v-for="feature in features" :key="feature.id">
+                                <th class="pb-1 text-start">
+                                    <span class="fw-normal">{{ feature.name }}</span>
+                                </th>
+                                <td class="pb-1 text-center" v-for="plan in plans" :key="plan.id">
+                                    <i v-if="plan.featuresIncluded.includes(feature.id)"
+                                        class="bi bi-check2 fs-5 text-success"></i>
+                                    <i v-else-if="feature.name === 'Brand Logo' && plan.id === 4"
+                                        class="fw-normal">Basic</i>
+                                    <i v-else class="bi bi-dash fs-5 text-secondary"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                <table class="table table-borderless table-hover container-fluid" style="width: 100%">
-                    <thead class="border-bottom">
-                        <tr>
-                            <th></th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Essential</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Info Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">999</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Standard</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Business Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0 default_cursor_cs">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">1499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center default_cursor_cs" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Advanced</p>
-                                <p class="lead fs-6 lh-1 mb-0">Catalog Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3">2499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                            <th scope="col" class="border-end text-center" style="width: 20%">
-                                <p class="fs-4 ls-1 mb-0 default_cursor_cs">Ultimate</p>
-                                <p class="lead fs-6 lh-1 mb-0 default_cursor_cs">Designer Website</p>
-                                <div class="brand-bg-primary mx-auto mt-3 mb-2" style="width: 50px; height: 2px;"></div>
-                                <p class="mb-0">
-                                    <span class="fw-normal superscript">₹</span>
-                                    <span class="fs-3 default_cursor_cs">3499</span>
-                                    <span class="fw-normal">/-</span>
-                                </p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-start border-end">
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Domin</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">.in Domain</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal default_cursor_cs">.in Domain</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Email Id</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SSL Certificate</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Contact Form</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Mobile Responsive</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">SEO friendly</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Google Location Map</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Direct Calling</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center default_cursor_cs">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Social Links</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Whatsapp Connect</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Payment Detail</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Business Catelog</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Content Writing</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Free Update</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-check2 fs-5 text-success"></i>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Brand Logo</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <i class="bi bi-dash fs-5 text-secondary"></i>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">Basic</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Development Time</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">1 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">2 day*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Customer Support</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">24x7*</span>
-                            </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal">Renewal Charges</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 1000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                            <th class="pb-1 text-center">
-                                <span class="fw-normal">₹ 2000/yr</span>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-borderless table-hover container-fluid" style="width: 100%">
+                        <thead class="border-bottom">
+                            <tr>
+                                <th></th>
+                                <th scope="col" class="border-end text-center" v-for="plan in plans"
+                                    :key="plan.id">
+                                    <p class="mb-0">{{ plan.title }}</p>
+                                    <p class="mb-0 ">
+                                        <small class="">₹</small>
+                                        <small class="">{{ plan.price }}</small>
+                                        <small class="fw-normal">/-</small>
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-start border-end">
+                            <tr class="border-bottom" v-for="feature in features" :key="feature.id">
+                                <th class="pb-1 text-start">
+                                    <span class="fw-normal">{{ feature.name }}</span>
+                                </th>
+                                <td class="pb-1 text-center" v-for="plan in plans" :key="plan.id">
+                                    <i v-if="plan.featuresIncluded.includes(feature.id)"
+                                        class="bi bi-check2 fs-5 text-success"></i>
+                                    <i v-else-if="feature.name === 'Brand Logo' && plan.id === 4"
+                                        class="fw-normal">Basic</i>
+                                    <i v-else class="bi bi-dash fs-5 text-secondary"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -1095,6 +129,36 @@
 <script>
 export default {
     name: "StarterPricing",
+    data() {
+        return {
+            plans: [
+                { id: 1, title: "1", sup:"st", description: "Info Website", price: 999, featuresIncluded: [1, 2, 3, 4, 5, 6] },
+                { id: 2, title: "2", sup:"nd", description: "Business Website", price: 1499, featuresIncluded: [1, 2, 3, 4, 5, 6, 7, 8] },
+                { id: 3, title: "3", sup:"rd", description: "Catalog Website", price: 2499, featuresIncluded: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+                { id: 4, title: "4", sup:"th", description: "Designer Website", price: 3499, featuresIncluded: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] },
+            ],
+            features: [
+                { id: 1, name: "Free Domin" },
+                { id: 2, name: "Email Id" },
+                { id: 3, name: "SSL Certificate" },
+                { id: 4, name: "Contact Form" },
+                { id: 5, name: "Mobile Responsive" },
+                { id: 6, name: "SEO friendly" },
+                { id: 7, name: "Google Location Map" },
+                { id: 8, name: "Direct Calling" },
+                { id: 9, name: "Social Links" },
+                { id: 10, name: "Whatsapp Connect" },
+                { id: 11, name: "Payment Detail" },
+                { id: 12, name: "Business Catelog" },
+                { id: 13, name: "Content Writing" },
+                { id: 14, name: "Free Update" },
+                { id: 15, name: "Brand Logo" },
+                { id: 16, name: "Development Time" },
+                { id: 17, name: "Customer Support" },
+                { id: 18, name: "Renewal Charges" },
+            ],
+        };
+    },
 }
 </script>
 <style lang="">
