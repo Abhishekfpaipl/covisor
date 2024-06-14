@@ -72,10 +72,41 @@ const routes = [
     component: () => import('@/pages/CareerPage.vue')
   },
   {
-    path: "/pricing",
+    path: "/pricing/:title",
     name: "StarterPricing",
     component: () => import('@/pages/StarterPricing.vue')
   },
+  {
+    path: "/website-development",
+    name: "WebsiteDevelopmentPage",
+    component: () => import('@/pages/WebsiteDevelopmentPage.vue')
+  },
+  {
+    path: "/b2b-ecommerce-development",
+    name: "B2BEcommerceDevelopment",
+    component: () => import('@/pages/B2BEcommerceDevelopment.vue')
+  },
+  {
+    path: "/b2c-ecommerce-development",
+    name: "B2CEcommerceDevelopment",
+    component: () => import('@/pages/B2CEcommerceDevelopment.vue')
+  },
+  {
+    path: "/software-development",
+    name: "SoftwareDevelopment",
+    component: () => import('@/pages/SoftwareDevelopment.vue')
+  },
+  {
+    path: "/graphic-designing",
+    name: "GraphicDesigning",
+    component: () => import('@/pages/GraphicDesigning.vue')
+  },
+  {
+    path: "/digital-marketing",
+    name: "DigitalMarketingPage",
+    component: () => import('@/pages/DigitalMarketingPage.vue')
+  },
+
   {
     path: "/demo",
     name: "DemoPage",

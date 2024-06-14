@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <h1 class="fw-bold">Starter Packages</h1>
+        <h1 class="fw-bold">Services</h1>
         <small>No extra or hidden charges, only pay what you see</small>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-lg-3">
             <div class="col card border-0 bg-none" v-for="(pack, index) in packs" :key="index">
                 <div class="card-body bg-white p-0 pb-4 shadow mx-2">
                     <div class="brand-primary bg-light rounded">
-                        <p class="border-bottom fs-4 fw-bold title p-2 mb-0">
+                        <p class="border-bottom fs-4 fw-bold p-2 mb-0 text-capitalize">
                             {{ pack.title }}
                         </p>
                         <p class="mb-0 py-2 align-middle bg-light text-dark">
@@ -30,10 +30,10 @@
                     </div>
 
                     <div class="btn-group">
-                        <router-link to="" class="btn border btn-light text-capitalize px-4">
+                        <router-link :to="pack.link" class="btn border btn-light text-capitalize px-4">
                             Know More
                         </router-link>
-                        <router-link to="" class="btn text-capitalize px-4"
+                        <router-link :to="pack.link" class="btn text-capitalize px-4 text-white"
                             style="background-color: var(--bg-primary);">
                             {{ pack.buttonText }}
                         </router-link>
@@ -51,7 +51,9 @@ export default {
         return {
             packs: [
                 {
-                    title: "Connect",
+                    slug: "website-development",
+                    title: "Website development",
+                    link: "/website-development",
                     price: "999",
                     mrp: "₹ 5,000",
                     features: [
@@ -63,8 +65,70 @@ export default {
                     buttonText: "Get Online"
                 },
                 {
-                    title: "Business",
-                    price: "4,999",
+                    slug: "ecommerce-development",
+                    title: "B2B Ecommerce development",
+                    link: "/b2b-ecommerce-development",
+                    price: "14,999",
+                    mrp: "₹ 25,000",
+                    features: [
+                        "Ecommerce Website",
+                        "Advance Admin Panel",
+                        "Unlimited Page Website",
+                        "Google Analytics",
+                        "Domain & Hosting"
+                    ],
+                    buttonText: "Let's Scale"
+                },
+                {
+                    slug: "ecommerce-development",
+                    title: "B2C Ecommerce development",
+                    link: "/b2c-ecommerce-development",
+                    price: "14,999",
+                    mrp: "₹ 25,000",
+                    features: [
+                        "Ecommerce Website",
+                        "Advance Admin Panel",
+                        "Unlimited Page Website",
+                        "Google Analytics",
+                        "Domain & Hosting"
+                    ],
+                    buttonText: "Let's Scale"
+                },
+                {
+                    slug: "ecommerce-development",
+                    title: "Software development",
+                    link: "/software-development",
+                    price: "14,999",
+                    mrp: "₹ 25,000",
+                    features: [
+                        "Ecommerce Website",
+                        "Advance Admin Panel",
+                        "Unlimited Page Website",
+                        "Google Analytics",
+                        "Domain & Hosting"
+                    ],
+                    buttonText: "Let's Scale"
+                },
+                {
+                    slug: "ecommerce-development",
+                    title: "Graphic Designing",
+                    link: "/graphic-designing",
+                    price: "14,999",
+                    mrp: "₹ 25,000",
+                    features: [
+                        "Ecommerce Website",
+                        "Advance Admin Panel",
+                        "Unlimited Page Website",
+                        "Google Analytics",
+                        "Domain & Hosting"
+                    ],
+                    buttonText: "Let's Scale"
+                },
+                {
+                    slug: "digital-marketing",
+                    title: "Digital marketing",
+                    link: "/digital-marketing",
+                    price: "24,999",
                     mrp: "₹ 10,000",
                     features: [
                         "Business Catalog",
@@ -75,19 +139,6 @@ export default {
                     ],
                     buttonText: "Give Boost"
                 },
-                {
-                    title: "Ecommerce",
-                    price: "19,999",
-                    mrp: "₹ 25,000",
-                    features: [
-                        "Ecommerce Website",
-                        "Advance Admin Panel",
-                        "Unlimited Page Website",
-                        "Google Analytics",
-                        "Domain & Hosting"
-                    ],
-                    buttonText: "Let's Scale"
-                }
             ]
         }
     },

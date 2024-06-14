@@ -4,7 +4,7 @@
         <p>Category: {{ category }}</p>
         <p>Place: {{ place }}</p> -->
         <FormBanner :service="services" :category="category" :place="place" v-observe />
-        <LeadManagement v-observe />
+        <LeadManagement :values="leads" :title="'Industries we work for'" v-observe />
         <Success v-observe />
         <Faq v-observe />
         <Service v-observe />
@@ -40,7 +40,45 @@ export default {
         return {
             services: '',
             category: '',
-            place: ''
+            place: '',
+            leads: [
+                {
+                    id: 1,
+                    icon: 'bi-funnel fs-4',
+                    title: "Web applications",
+                    description: "There are basic Internet presence websites which provide information about the company, its products and services offered. In a number of cases, this information does not change very frequently and hence we create, what we call, static / HTML presence websites.",
+                },
+                {
+                    id: 2,
+                    icon: 'bi-diagram-3 fs-4',
+                    title: "E commerce websites",
+                    description: "We don't just develop your eCommerce store, We scale your Business profit through continuous improvements and reinforcements and market trends.E-Commerce has been the de facto standard for shopping online in this era of development and fast paced environment.",
+                },
+                {
+                    id: 3,
+                    icon: 'bi-hand-thumbs-up fs-4',
+                    title: "mobile apps",
+                    description: "Our mobile app development service extends to app popular platforms like Android and iOS, and app popular devices like Android Phones, iPhones, iPad and Tablet devices.It is a well-known fact that mobile phone will be a big enabler for business and most applications will be accessed using hand-held devices in future.",
+                },
+                {
+                    id: 4,
+                    icon: 'bi-megaphone fs-4',
+                    title: "seo",
+                    description: "Once your website is up and running, you will want to make sure that Google ranks you highly, so that your customers or visitors can find you easily. This is the ultimate goal of every company operating online. We will work to maximize your website's online presence and reputation.",
+                },
+                {
+                    id: 5,
+                    icon: 'bi-telephone fs-4',
+                    title: "digital marketing",
+                    description: "Digital marketing is a vital aspect of any business that operates online, providing valuable exposure. Creating a marketing campaign that is designed to keep viewers, visitors and subscribers engaged can have incredible effects on conversions, both immediately and further down the line.",
+                },
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    title: "maintanance",
+                    description: "Once your website is up and running, you may want to keep it looking as fresh, modern and relevant and as secure as the day it went live. We offer maintenance services and provide vital updates to your website. we also provide free training so you can DIY your website maintenance.",
+                },
+            ],
         };
     },
     created() {

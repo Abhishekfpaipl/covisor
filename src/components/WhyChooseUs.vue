@@ -4,7 +4,7 @@
             <div class="row d-flex align-items-start rounded-md-5 rounded-0 p-3 text-dark">
                 <div class="col-12 col-md-6 d-flex flex-column">
                     <h1 class="text-center mb-3">{{ title }}</h1>
-                    <img class="align-self-center" src="img/whychoose.svg" style="width: 250px; max-width: 80%;"
+                    <img class="align-self-center" src="/img/whychoose.svg" style="width: 250px; max-width: 80%;"
                         alt="image">
                 </div>
                 <div class="col-12 col-md-6 mt-5 mt-md-0">
