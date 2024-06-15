@@ -1,13 +1,9 @@
 <template>
     <div>
-        <div class="text-white py-5" style="background-color: var(--bg-primary); padding-bottom: 6rem !important;">
-            <h1 class="text-center mb-0 fw-bold">B2B Ecommerce Development</h1>
-            <small class="text-capitalize">The secret of getting ahead, is getting started</small>
-        </div>
-        <div class="">
-            <LeadManagement :values="features" :title="'test'" v-observe />
-        </div>
-        <div class="">
+        <FormBanner :service="'B2B ecommerce Development'" :category="category" :place="place" v-observe />
+
+        <LeadManagement :values="features" :title="'Factors, you will love'" v-observe />
+        <div class="container">
             <h1 class="text-center">Pricing</h1>
             <div class="table-responsive">
                 <table class="table table-borderless table-hover container-fluid" style="width: 100%">
@@ -41,15 +37,41 @@
                 </table>
             </div>
         </div>
+
+        <Service v-observe />
+        <Success v-observe />
+        <Faq :questions="questions" v-observe />
+        <Counter :service="'b2b ecommerce Development'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
+            :place="'All over the world'" :placeCount="5000" v-observe />
+        <OurService v-observe />
+        <Trophy :service="'b2b ecommerce Development'" :category="''" :place="''" v-observe />
+
     </div>
+    <FooterBar />
 </template>
 
 <script>
 import LeadManagement from '@/components/LeadManagement.vue'
+import FooterBar from '@/components/FooterBar.vue'
+import OurService from '@/components/OurService.vue'
+import Success from '@/components/SucessSection.vue';
+import Faq from '@/components/FaqSection.vue';
+import Service from '@/components/salesfunnel/ServicesSection.vue';
+import Trophy from '@/components/salesfunnel/TrophySection.vue';
+import FormBanner from '@/components/salesfunnel/FormBanner.vue';
+import Counter from '@/components/salesfunnel/SalesCounter.vue';
 export default {
     name: "B2BEcommerceDevelopment",
     components: {
         LeadManagement,
+        FooterBar,
+        OurService,
+        FormBanner,
+        Success,
+        Faq,
+        Service,
+        Counter,
+        Trophy,
     },
     data() {
         return {
@@ -166,77 +188,109 @@ export default {
             features: [
                 {
                     id: 1,
-                    icon: 'bi-funnel fs-4',
-                    title: "Search Engine Optimization(SEO)",
-                    description: "On-Page SEO: Optimizing website content, meta tags, and structure to improve search engine rankings. Off- Page SEO: Building quality backlinks, managing local listings, and enhancing domain authority.",
+                    icon: 'bi-tags fs-4',
+                    title: "Customizable Catalogs and Pricing",
+                    description: "Set unique prices and catalogs for different customers.",
                 },
                 {
                     id: 2,
-                    icon: 'bi-diagram-3 fs-4',
-                    title: "Pay-Per-Click Advertising (PPC)",
-                    description: "Creation and management of paid advertising campaigns on search engines (like Google Ads) and social media platforms (like Facebook Ads).Strategic bidding, keyword research, ad creation, and performance tracking.",
+                    icon: 'bi-people fs-4',
+                    title: "Account Management and Roles",
+                    description: "Manage user roles and account hierarchies efficiently.",
                 },
                 {
                     id: 3,
-                    icon: 'bi-hand-thumbs-up fs-4',
-                    title: "Content Marketing",
-                    description: "Development of high-quality, relevant content (articles, blogs, videos, infographics) to attract and engage target audiences. Content distribution through various channels to maximize reach and impact.",
+                    icon: 'bi-diagram-3 fs-4',
+                    title: "Integration with ERP and CRM Systems",
+                    description: "Sync inventory, customer data, and orders seamlessly.",
                 },
                 {
                     id: 4,
-                    icon: 'bi-megaphone fs-4',
-                    title: "Social Media Marketing (SMM)",
-                    description: "Social Media Management: Creating and curating content for social media platforms (Facebook, Instagram, Twitter, LinkedIn, etc.). Paid Social Advertising: Running targeted ad campaigns to increase brand awareness, generate leads, and drive conversions.",
+                    icon: 'bi-filter fs-4',
+                    title: "Advanced Product Search and Filtering",
+                    description: "Filter products by attributes with faceted search.",
                 },
                 {
                     id: 5,
-                    icon: 'bi-telephone fs-4',
-                    title: "Email Marketing",
-                    description: "Designing and executing email campaigns to nurture leads, promote products/services, and build customer relationships. Segmentation, personalization, and automation of email sequences for optimal engagement.",
+                    icon: 'bi-box-seam fs-4',
+                    title: "Bulk Ordering and Quick Reorder",
+                    description: "Easily reorder and manage bulk purchases.",
                 },
                 {
                     id: 65,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Influencer Marketing",
-                    description: "Collaborating with influencers and industry experts to endorse products/services and reach their dedicated audience. Identifying and partnering with influencers whose audience aligns with your target market.",
+                    icon: 'bi-currency-exchange fs-4',
+                    title: "Quoting and Negotiation Tools",
+                    description: "RFQ functionality to negotiate prices and terms.",
                 },
                 {
                     id: 63,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Conversion Rate Optimization (CRO)",
-                    description: "Analyzing user behavior on websites and landing pages to identify barriers and optimize for higher conversion rates. A/B testing, usability testing, and implementing data-driven improvements.",
+                    icon: 'bi-credit-card fs-4',
+                    title: "Payment and Credit Options",
+                    description: "Flexible payment methods and credit management.",
                 },
                 {
                     id: 54,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Analytics and Reporting",
-                    description: "Monitoring and analyzing digital marketing performance metrics (traffic, conversions, ROI) to measure effectiveness and inform strategic decisions. Providing regular reports with actionable insights and recommendations for continuous improvement.",
+                    icon: 'bi-box-arrow-in-down fs-4',
+                    title: "Order Management and Fulfillment",
+                    description: "Manage orders from creation to shipment tracking.",
                 },
                 {
                     id: 125,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Online Reputation Management (ORM)",
-                    description: "Monitoring and responding to online reviews, comments, and mentions to maintain a positive brand image. Mitigating negative feedback and leveraging positive feedback to enhance credibility and trustworthiness.",
+                    icon: 'bi-person-circle fs-4',
+                    title: "Customer Self-Service Tools",
+                    description: "Dashboards for orders, returns, and account settings.",
                 },
                 {
                     id: 68,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Mobile Marketing",
-                    description: "Optimizing digital marketing strategies and campaigns for mobile users, considering mobile-specific behaviors and preferences.Mobile-friendly website design, SMS marketing, and mobile app marketing strategies.",
+                    icon: 'bi-graph-up fs-4',
+                    title: "Analytics and Reporting",
+                    description: "Get insights with customizable analytics and reports.",
                 },
                 {
                     id: 30,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Customer Relationship Management (CRM)",
-                    description: "Integrating CRM systems to manage and nurture leads throughout the sales funnel.Leveraging customer data for personalized marketing campaigns and improved customer retention.",
+                    icon: 'bi-shield-lock fs-4',
+                    title: "Security and Compliance",
+                    description: "Ensure data security and compliance with industry standards.",
                 },
                 {
-                    id: 30,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Marketing Automation",
-                    description: "Implementing tools and platforms (like HubSpot, Marketo, or Mailchimp) to automate repetitive marketing tasks, such as email scheduling, lead nurturing, and campaign management.",
+                    id: 31,
+                    icon: 'bi-phone fs-4',
+                    title: "Responsive Design and Mobile Compatibility",
+                    description: "Mobile-friendly design for seamless user experience.",
                 },
             ],
+            questions: [
+                {
+                    id: 1,
+                    question: "Q1. Can i make whatsApp communication from saleswik CRM?",
+                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                },
+                {
+                    id: 2,
+                    question: "Q2. Is Saleswik CRM gives alert of timely followups?",
+                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                },
+                {
+                    id: 3,
+                    question: "Q3. Can I sync my call log leads to saleswik CRM?",
+                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                },
+                {
+                    id: 4,
+                    question: "Q4. Is my data secured at saleswik CRM?",
+                    answer: "Yes, your data is completely safe, and important credentails are encripted."
+                },
+                {
+                    id: 5,
+                    question: "Q5. Can i sync leads form my website to saleswik?",
+                    answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
+                },
+                {
+                    id: 6,
+                    question: "Q6. Can i manage my accounts at saleswik CRM?",
+                    answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
+                },
+            ]
         }
     }
 }

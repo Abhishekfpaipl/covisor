@@ -97,18 +97,10 @@
 
 <script>
 export default {
-    name: "SaleCategoryPage",
+    name: "SalePlacePage",
     data() {
         return {
             servicesList: ['Website Development', 'Digital Marketing', 'Ecommerce B2B Wholesale', 'Ecommerce B2C Retail', 'Software Development', 'Graphic Designing',],
-            placesList: [
-                'Delhi', 'Mumbai', 'Bangalore', 'Hyderabad', 'Chennai', 'Pune', 'Ahmedabad', 'Kolkata', 'Jaipur',
-                'Chandigarh', 'Coimbatore', 'Lucknow', 'Surat', 'Indore', 'Patna', 'Nagpur', 'Ernakulam', 'Bhopal',
-                'Vadodara', 'Ludhiana', 'Kanpur', 'Nashik', 'Varanasi', 'Visakhapatnam', 'Rajkot', 'Raipur-Chhattisgarh',
-                'Vijayawada', 'Madurai', 'Ranchi', 'Goa', 'Thiruvananthapuram', 'Bhubaneshwar', 'Allahabad',
-                'Aurangabad-Maharashtra', 'Dehradun', 'Mysore', 'Trichy', 'Guwahati', 'Agra', 'Kozhikode', 'Jodhpur',
-                'Thrissur', 'Kolhapur', 'Salem', 'Meerut', 'Mangalore', 'Gorakhpur', 'Jabalpur', 'Jalandhar', 'Gwalior'
-            ],
             categoriesList: [
                 'Body Massage Centres',
                 'Cinema Halls', 'Schools', 'Beauty Spas', 'Dermatologists', 'Hospitals', 'Malls',
@@ -126,7 +118,7 @@ export default {
                 'Nephrologists', 'Caterers', 'Interior Designers', 'Rehabilitation Center', 'Grocery Stores', 'Banks', 'ATM',
                 '5 Star Hotels', 'Hotels', 'Resorts', 'Plastic Surgeons', 'Smart Watch Dealers', 'Drug De Addiction Centres'
             ],
-            title: this.$route.params.category
+            title: this.$route.params.place
         };
     },
     computed: {
@@ -151,7 +143,7 @@ export default {
     },
     methods: {
         generateSentences(service) {
-            return this.placesList.map(place => `${service} in ${this.title} in ${place}`);
+            return this.categoriesList.map(category => `${service} in ${category} in ${this.title}`);
         },
         generateSlug(sentence) {
             // Convert sentence into slug format

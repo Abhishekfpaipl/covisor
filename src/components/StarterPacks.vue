@@ -66,7 +66,7 @@ export default {
                 },
                 {
                     slug: "ecommerce-development",
-                    title: "B2B Ecommerce development",
+                    title: "Ecommerce B2B Wholesale",
                     link: "/b2b-ecommerce-development",
                     price: "14,999",
                     mrp: "₹ 25,000",
@@ -81,7 +81,7 @@ export default {
                 },
                 {
                     slug: "ecommerce-development",
-                    title: "B2C Ecommerce development",
+                    title: "Ecommerce B2C Retail",
                     link: "/b2c-ecommerce-development",
                     price: "14,999",
                     mrp: "₹ 25,000",

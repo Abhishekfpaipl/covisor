@@ -118,6 +118,11 @@ const routes = [
     component: () => import('@/pages/SaleCategoryPage.vue')
   },
   {
+    path: "/sales-place/:place",
+    name: "SalePlacePage",
+    component: () => import('@/pages/SalePlacePage.vue')
+  },
+  {
     path: "/sales-funnel/:slug",
     name: "SalesFunnelPage",
     component: () => import('@/pages/SalesFunnelPage.vue')

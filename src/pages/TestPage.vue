@@ -10,7 +10,7 @@ export default {
     name: 'SalesFunnelPage',
     data() {
         return {
-            servicesList: ['Website Development Services', 'Digital Marketing Services', 'Ecommerce Development Services'],
+            servicesList: ['Website Development', 'Digital Marketing', 'Ecommerce B2B Wholesale','Ecommerce B2C Retail','Software Development','Graphic Designing',],
             categoriesList: [
                 'Body Massage Centres', 
                 'Cinema Halls', 'Schools', 'Beauty Spas', 'Dermatologists', 'Hospitals', 'Malls',

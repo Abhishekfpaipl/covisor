@@ -29,42 +29,43 @@
 <script>
 export default {
     name: 'FaqSection',
-    data() {
-        return {
-            questions: [
-                {
-                    id: 1,
-                    question: "Q1. Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
-                },
-                {
-                    id: 2,
-                    question: "Q2. Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
-                },
-                {
-                    id: 3,
-                    question: "Q3. Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
-                },
-                {
-                    id: 4,
-                    question: "Q4. Is my data secured at saleswik CRM?",
-                    answer: "Yes, your data is completely safe, and important credentails are encripted."
-                },
-                {
-                    id: 5,
-                    question: "Q5. Can i sync leads form my website to saleswik?",
-                    answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
-                },
-                {
-                    id: 6,
-                    question: "Q6. Can i manage my accounts at saleswik CRM?",
-                    answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
-                },
-            ]
-        }
-    }
+    props:['questions'],
+    // data() {
+    //     return {
+    //         questions: [
+    //             {
+    //                 id: 1,
+    //                 question: "Q1. Can i make whatsApp communication from saleswik CRM?",
+    //                 answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+    //             },
+    //             {
+    //                 id: 2,
+    //                 question: "Q2. Is Saleswik CRM gives alert of timely followups?",
+    //                 answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+    //             },
+    //             {
+    //                 id: 3,
+    //                 question: "Q3. Can I sync my call log leads to saleswik CRM?",
+    //                 answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+    //             },
+    //             {
+    //                 id: 4,
+    //                 question: "Q4. Is my data secured at saleswik CRM?",
+    //                 answer: "Yes, your data is completely safe, and important credentails are encripted."
+    //             },
+    //             {
+    //                 id: 5,
+    //                 question: "Q5. Can i sync leads form my website to saleswik?",
+    //                 answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
+    //             },
+    //             {
+    //                 id: 6,
+    //                 question: "Q6. Can i manage my accounts at saleswik CRM?",
+    //                 answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
+    //             },
+    //         ]
+    //     }
+    // }
 }
 </script>
 
