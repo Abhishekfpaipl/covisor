@@ -12,7 +12,7 @@
                         Website Development Services</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in website" :key="'wd-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                         <router-link :to="'/website-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -26,7 +26,7 @@
                         Digital Marketing Services</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in digital" :key="'dm-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/digital-marketing/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -40,7 +40,7 @@
                         Ecommerce B2B Wholesale</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in b2becom" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                          <router-link :to="'/b2b-ecommerce-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -54,7 +54,7 @@
                         Ecommerce B2C Retail</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in b2cecom" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                       <router-link :to="'/b2c-ecommerce-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -68,7 +68,7 @@
                         Software Development</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in software" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/software-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -82,7 +82,7 @@
                         Graphic Designing</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in graphic" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                         <router-link :to="'/graphic-designing/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}

@@ -3,12 +3,8 @@
         <div class="container">
             <div class="row d-flex align-items-start rounded-md-5 rounded-0 p-md-5 p-3 text-dark">
                 <div class="col-12 col-md-6 text-center text-md-start">
-                    <h1 class="text-white mb-3">Request a demo</h1>
-                    <div class="text-white my-4 pe-0 pe-md-5">Please fill in the form here, and we'll have the best
-                        product expert
-                        reach out to you for a
-                        one-to-one demo.</div>
-                    <div class="mt-3">
+                    <h1 class="text-white mb-3 text-capitalize">Book free consultation</h1>
+                    <div class="mt-4">
                         <div v-for="(link, index) in test" :key="index" class="d-flex text-center text-white my-3">
                             <i class="bi bi-check-square-fill me-2"></i>
                             <p class="mb-0 text-start">{{ link }}</p>
@@ -20,27 +16,12 @@
                     <form @submit.prevent="submitQuery()" class="mt-3 row g-3 needs-validation" novalidate>
                         <div class="w-100 form-floating mt-2">
                             <input type="text" class="form-control" placeholder="" v-model="name" required>
-                            <label for="floatingInput" class="text-muted ms-2">First name</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <input type="text" class="form-control" placeholder="Mobile" v-model="email" required>
-                            <label class="ms-2 text-muted">Email.</label>
+                            <label for="floatingInput" class="text-muted ms-2">Name</label>
                         </div>
                         <div class="w-100 form-floating mt-2">
                             <input type="tel" class="form-control" placeholder="Mobile" v-model="number" required>
                             <label class="ms-2 text-muted">Mobile No.</label>
                         </div>
-                        <div class="w-100 form-floating mt-2">
-                            <input type="text" class="form-control" placeholder="Mobile" v-model="businessName"
-                                required>
-                            <label class="ms-2 text-muted">Business Name.</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                v-model="note"></textarea>
-                            <label for="floatingTextarea" class="ms-2 text-muted">Notes.</label>
-                        </div>
-
                         <div class="col-12">
                             <button class="btn btn-danger py-2 fs-5 w-100" type="submit">Submit</button>
                         </div>
@@ -58,16 +39,12 @@ export default {
             title: "Why Choose Us",
             test: [
                 "We will get to know first your exact requirements.",
-                "Arrange your live and personalized demo of SalesWik.",
-                "Explian you how SalesWik can help you to grow your business.",
-                "Q&A session with our product expert.",
+                "Explian you how we can help you to grow your business.",
+                "Q&A session with our technical expert.",
                 "In-depth explanation of pricing and features.",
             ],
             name: "",
-            email: "",
             number: "",
-            businessName: "",
-            note: "",
         }
     }
 }

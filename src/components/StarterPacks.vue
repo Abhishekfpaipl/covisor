@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container my-5 py-5">
         <h1 class="fw-bold">Services</h1>
         <small>No extra or hidden charges, only pay what you see</small>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-lg-3">
@@ -30,12 +30,12 @@
                     </div>
 
                     <div class="btn-group">
-                        <router-link :to="pack.link" class="btn border btn-light text-capitalize px-4">
+                        <router-link :to="pack.link + pack.price" class="btn border btn-light text-capitalize px-4">
                             Know More
                         </router-link>
-                        <router-link :to="pack.link" class="btn text-capitalize px-4 text-white"
-                            style="background-color: var(--bg-primary);">
-                            {{ pack.buttonText }}
+                        <router-link :to="pack.link" class="btn text-capitalize px-4 text-white btn-success">
+                            <i class="bi bi-whatsapp"></i>
+                            <span class="ms-2">Enquiry</span>
                         </router-link>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ export default {
                 {
                     slug: "website-development",
                     title: "Website development",
-                    link: "/website-development",
+                    link: "/website-development/",
                     price: "999",
                     mrp: "₹ 5,000",
                     features: [
@@ -61,13 +61,12 @@ export default {
                         "Single Email Account",
                         "Shared Domain",
                         "Shared Storage",
-                    ],
-                    buttonText: "Get Online"
+                    ], 
                 },
                 {
                     slug: "ecommerce-development",
                     title: "Ecommerce B2B Wholesale",
-                    link: "/b2b-ecommerce-development",
+                    link: "/b2b-ecommerce-development/",
                     price: "14,999",
                     mrp: "₹ 25,000",
                     features: [
@@ -76,13 +75,12 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ],
-                    buttonText: "Let's Scale"
+                    ], 
                 },
                 {
                     slug: "ecommerce-development",
                     title: "Ecommerce B2C Retail",
-                    link: "/b2c-ecommerce-development",
+                    link: "/b2c-ecommerce-development/",
                     price: "14,999",
                     mrp: "₹ 25,000",
                     features: [
@@ -91,13 +89,12 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ],
-                    buttonText: "Let's Scale"
+                    ], 
                 },
                 {
                     slug: "ecommerce-development",
                     title: "Software development",
-                    link: "/software-development",
+                    link: "/software-development/",
                     price: "14,999",
                     mrp: "₹ 25,000",
                     features: [
@@ -106,13 +103,12 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ],
-                    buttonText: "Let's Scale"
+                    ], 
                 },
                 {
                     slug: "ecommerce-development",
                     title: "Graphic Designing",
-                    link: "/graphic-designing",
+                    link: "/graphic-designing/",
                     price: "14,999",
                     mrp: "₹ 25,000",
                     features: [
@@ -121,13 +117,12 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ],
-                    buttonText: "Let's Scale"
+                    ], 
                 },
                 {
                     slug: "digital-marketing",
                     title: "Digital marketing",
-                    link: "/digital-marketing",
+                    link: "/digital-marketing/",
                     price: "24,999",
                     mrp: "₹ 10,000",
                     features: [
@@ -136,8 +131,7 @@ export default {
                         "Multi Page Website",
                         "Multiple Email Account",
                         "Domain & Hosting",
-                    ],
-                    buttonText: "Give Boost"
+                    ], 
                 },
             ]
         }

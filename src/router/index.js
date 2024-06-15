@@ -27,19 +27,9 @@ const routes = [
     component: () => import("@/pages/LegalWarning.vue"),
   },
   {
-    path: "/demo-page1",
-    name: "DemoPage1",
-    component: () => import("@/pages/DemoPage1.vue"),
-  },
-  {
     path: "/thank-you",
     name: "ThankYou",
     component: () => import("@/pages/ThankYou.vue"),
-  },
-  {
-    path: "/demo-page2",
-    name: "DemoPage2",
-    component: () => import("@/pages/DemoPage2.vue"),
   },
   {
     path: "/login-page",
@@ -77,32 +67,32 @@ const routes = [
     component: () => import('@/pages/StarterPricing.vue')
   },
   {
-    path: "/website-development",
+    path: "/website-development/:title",
     name: "WebsiteDevelopmentPage",
     component: () => import('@/pages/WebsiteDevelopmentPage.vue')
   },
   {
-    path: "/b2b-ecommerce-development",
+    path: "/b2b-ecommerce-development/:title",
     name: "B2BEcommerceDevelopment",
     component: () => import('@/pages/B2BEcommerceDevelopment.vue')
   },
   {
-    path: "/b2c-ecommerce-development",
+    path: "/b2c-ecommerce-development/:title",
     name: "B2CEcommerceDevelopment",
     component: () => import('@/pages/B2CEcommerceDevelopment.vue')
   },
   {
-    path: "/software-development",
+    path: "/software-development/:title",
     name: "SoftwareDevelopment",
     component: () => import('@/pages/SoftwareDevelopment.vue')
   },
   {
-    path: "/graphic-designing",
+    path: "/graphic-designing/:title",
     name: "GraphicDesigning",
     component: () => import('@/pages/GraphicDesigning.vue')
   },
   {
-    path: "/digital-marketing",
+    path: "/digital-marketing/:title",
     name: "DigitalMarketingPage",
     component: () => import('@/pages/DigitalMarketingPage.vue')
   },

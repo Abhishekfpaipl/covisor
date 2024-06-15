@@ -1,21 +1,26 @@
 <template>
     <div>
-        <FormBanner :service="'Digital marketing'" :category="category" :place="place" v-observe />
+        <FormBanner :service="'Digital Marketing'" :category="category" :place="place" v-observe />
 
         <LeadManagement :values="features" :title="'Factors, you will love'" v-observe />
         <div class="container">
-            <h1 class="text-center">Pricing</h1>
-            <div class="table-responsive">
-                <table class="table table-borderless table-hover container-fluid" style="width: 100%">
+            <h1 class="text-center py-4">Digital Marketing Pricing</h1>
+            <div class="table-responsive pb-4">
+                <table class="table table-bordered table-light table-striped" style="width: 100%;">
                     <thead class="border-bottom">
                         <tr>
-                            <th></th>
+                            <th class="text-start">Features <p class="mb-0 small">List</p>
+                            </th>
                             <th scope="col" class="border-end text-center" v-for="plan in plans" :key="plan.id">
-                                <p class="mb-0">{{ plan.title }} <sup>{{ plan.sup }}</sup></p>
+                                <p class="mb-0">{{ plan.title }}</p>
                                 <p class="mb-0 ">
                                     <small class="smaller ">₹</small>
                                     <small class="smaller">{{ plan.price }}</small>
                                     <small class="smaller fw-normal">/-</small>
+                                </p>
+                                <p class="mb-0">
+                                    <small class="fw-light text-decoration-line-through text-dark smaller">{{ plan.mrp
+                                        }}</small>
                                 </p>
                             </th>
                         </tr>
@@ -41,10 +46,10 @@
         <Service v-observe />
         <Success v-observe />
         <Faq :questions="questions" v-observe />
-        <Counter :service="'Digital marketing'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
+        <Counter :service="'Digital Marketing'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
             :place="'All over the world'" :placeCount="5000" v-observe />
         <OurService v-observe />
-        <Trophy :service="'Digital marketing'" :category="''" :place="''" v-observe />
+        <Trophy :service="'Digital Marketing'" :category="''" :place="''" v-observe />
 
     </div>
     <FooterBar />
@@ -75,13 +80,16 @@ export default {
     },
     data() {
         return {
+            services: '',
+            category: '',
+            place: '',
             plans: [
                 {
                     id: 1,
-                    title: "1",
-                    sup: "st",
+                    title: "Lite",
                     description: "Info Website",
-                    price: 999,
+                    price: '4,999',
+                    mrp: '10,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -105,10 +113,10 @@ export default {
                 },
                 {
                     id: 2,
-                    title: "2",
-                    sup: "nd",
+                    title: "Plus",
                     description: "Business Website",
-                    price: 1499,
+                    price: '14,999',
+                    mrp: '30,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -132,10 +140,10 @@ export default {
                 },
                 {
                     id: 3,
-                    title: "3",
-                    sup: "rd",
+                    title: "Elite",
                     description: "Catalog Website",
-                    price: 2499,
+                    price: '29,999',
+                    mrp: '60,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -159,10 +167,10 @@ export default {
                 },
                 {
                     id: 4,
-                    title: "4",
-                    sup: "th",
+                    title: "Pro",
                     description: "Designer Website",
-                    price: 3499,
+                    price: '49,999',
+                    mrp: '90,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -262,35 +270,74 @@ export default {
             questions: [
                 {
                     id: 1,
-                    question: "Q1. Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                    question: "Why is digital marketing important for my business?",
+                    answer: " Exploring the benefits of digital marketing in terms of reaching a larger audience, increasing brand visibility, and driving sales or leads."
                 },
                 {
                     id: 2,
-                    question: "Q2. Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                    question: "How do I determine which digital marketing strategies are best for my business?",
+                    answer: "Assessing which channels and tactics align with business goals, target audience, budget, and industry."
                 },
                 {
                     id: 3,
-                    question: "Q3. Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                    question: "How much should I budget for digital marketing?",
+                    answer: "Understanding typical costs associated with different digital marketing strategies and determining a budget that fits the business's resources and goals."
                 },
                 {
                     id: 4,
-                    question: "Q4. Is my data secured at saleswik CRM?",
-                    answer: "Yes, your data is completely safe, and important credentails are encripted."
+                    question: "How long does it take to see results from digital marketing efforts?",
+                    answer: "Managing expectations regarding the timeline for seeing measurable outcomes such as increased website traffic, leads, or conversions."
                 },
                 {
                     id: 5,
-                    question: "Q5. Can i sync leads form my website to saleswik?",
-                    answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
+                    question: "What metrics should I track to measure the success of my digital marketing campaigns?",
+                    answer: "Identifying key performance indicators (KPIs) such as website traffic, conversion rates, ROI, cost per acquisition (CPA), and engagement metrics."
                 },
                 {
                     id: 6,
-                    question: "Q6. Can i manage my accounts at saleswik CRM?",
-                    answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
+                    question: "How do I build an online presence and brand identity through digital marketing?",
+                    answer: "Strategies for creating consistent branding across digital channels, building relationships with customers, and maintaining a positive online reputation."
+                },
+                {
+                    id: 7,
+                    question: "How can digital marketing help with customer retention and loyalty?",
+                    answer: "Exploring tactics such as personalized email campaigns, social media engagement, loyalty programs, and customer feedback strategies."
+                },
+                {
+                    id: 8,
+                    question: "What are the ethical considerations in digital marketing, and how can I ensure compliance?",
+                    answer: "Understanding privacy regulations (like GDPR or CCPA), ethical practices in data collection and usage, and maintaining transparency with customers."
                 },
             ]
+        }
+    },
+    created() {
+        // Log the route params to debug
+        console.log('Route params:', this.$route.params);
+
+        // Extract the route parameter by the correct name
+        const routeParam = this.$route.params.title; // Use 'slug' if that is the parameter name
+
+        // Check if routeParam is defined
+        if (routeParam) {
+            this.extractParams(routeParam);
+        } else {
+            console.error('Route parameter is undefined');
+        }
+    },
+    methods: {
+        extractParams(paramString) {
+            // Split the string based on ' in ' keyword and then further parse it
+            let parts = paramString.split('-in-');
+            if (parts.length >= 2) {
+                this.services = parts[0].replace(/-/g, ' ');
+                this.category = parts[1].replace(/-/g, ' ');
+
+                // Check if there is a third part for the place
+                if (parts.length > 2) {
+                    this.place = parts.slice(2).join(' ').replace(/-/g, ' ');
+                }
+            }
         }
     }
 }

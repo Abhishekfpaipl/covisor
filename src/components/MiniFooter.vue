@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-5">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item" v-for="(link, index) in links" :key="index">
                 <h2 class="accordion-header">

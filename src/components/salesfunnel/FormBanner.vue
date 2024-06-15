@@ -7,8 +7,8 @@
                 <div class="bg-danger rounded py-2">
                     <h3 v-if="service" class="text-white text-uppercase mb-0">{{ service }} </h3>
                     <p class="text-white text-capitalize fs-5 fw-bold mb-0">
-                        <span v-if="category" class="text-uppercase">to {{ category }}</span>
-                        <span v-if="place" class="text-uppercase">in  {{ place }}</span>
+                        <span v-if="category" class="text-uppercase">&nbsp;to&nbsp;{{ category }}</span>
+                        <span v-if="place" class="text-uppercase">&nbsp;in&nbsp;{{ place }}</span>
                     </p>
                 </div>
                 <div class="col-12 col-md-6 align-items-center text-center text-md-start">

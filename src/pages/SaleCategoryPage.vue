@@ -12,7 +12,7 @@
                         Website Development Services</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in website" :key="'wd-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/website-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -26,7 +26,7 @@
                         Digital Marketing Services</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in digital" :key="'dm-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/digital-marketing/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -40,7 +40,7 @@
                         Ecommerce B2B Wholesale</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in b2becom" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/b2b-ecommerce-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -54,7 +54,7 @@
                         Ecommerce B2C Retail</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in b2cecom" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/b2c-ecommerce-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -68,7 +68,7 @@
                         Software Development</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in software" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/software-development/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -82,7 +82,7 @@
                         Graphic Designing</h4>
                     <div class="p-1 ps-3 my-2" v-for="(sentence, index) in graphic" :key="'ec-' + index"
                         style="border-left: 3px solid var(--bg-primary)">
-                        <router-link :to="'/sales-funnel/' + generateSlug(sentence)"
+                        <router-link :to="'/graphic-designing/' + generateSlug(sentence)"
                             class="text-decoration-none text-black">
                             <small>
                                 {{ sentence }}
@@ -108,23 +108,6 @@ export default {
                 'Vijayawada', 'Madurai', 'Ranchi', 'Goa', 'Thiruvananthapuram', 'Bhubaneshwar', 'Allahabad',
                 'Aurangabad-Maharashtra', 'Dehradun', 'Mysore', 'Trichy', 'Guwahati', 'Agra', 'Kozhikode', 'Jodhpur',
                 'Thrissur', 'Kolhapur', 'Salem', 'Meerut', 'Mangalore', 'Gorakhpur', 'Jabalpur', 'Jalandhar', 'Gwalior'
-            ],
-            categoriesList: [
-                'Body Massage Centres',
-                'Cinema Halls', 'Schools', 'Beauty Spas', 'Dermatologists', 'Hospitals', 'Malls',
-                'Gyms', 'Beauty Parlours', 'Estate Agents', 'Banquet Halls', 'ENT Doctors', 'Book Shops', 'Bike On Rent',
-                'Sexologist Doctors', 'Neurologists', 'Gynaecologist & Obstetrician Doctors', 'Train Ticket Booking Agents',
-                'Travel Agents', 'Paying Guest Accommodations', 'General Physician Doctors', 'Dentists', 'Orthopaedic Doctors',
-                'Chemists', 'Motor Training Schools', 'Gastroenterologists', 'Car Rental', 'Salons', 'Courier Services',
-                'Dance Classes', 'Pathology Labs', 'Taxi Services', 'Cake Shops', 'AC Repair & Services', 'Mobile Phone Dealers',
-                'Pet Shops', 'Dmart', 'Packers And Movers', 'Psychiatrists', 'Dharamshalas', 'Urologist Doctors', 'Bakeries',
-                'Bicycle Dealers', 'Coffee Shops', 'Paediatricians', 'Sonography Centres', 'Yoga Classes', 'Hostels',
-                'Cardiologists', 'Electrical Shops', 'Skin Care Clinics', 'Diagnostic Centres', 'Homeopathic Doctors',
-                'Physiotherapists', 'Photo Studios', 'Plumbers', 'Music Classes', 'Electricians', 'Sports Goods Dealers',
-                'Shoe Dealers', 'Hair Stylists', 'Gift Shops', 'Ophthalmologists', 'Car Repair & Services', 'Ayurvedic Doctors',
-                'Eye Clinics', 'Restaurants', 'Carpenters', 'Jewellery Showrooms', 'Cooks On Hire', 'Stationery Shops',
-                'Nephrologists', 'Caterers', 'Interior Designers', 'Rehabilitation Center', 'Grocery Stores', 'Banks', 'ATM',
-                '5 Star Hotels', 'Hotels', 'Resorts', 'Plastic Surgeons', 'Smart Watch Dealers', 'Drug De Addiction Centres'
             ],
             title: this.$route.params.category
         };

@@ -9,8 +9,9 @@
         <Counter :service="'Website Development'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
             :place="'All over the world'" :placeCount="5000" v-observe />
         <OurService v-observe />
-        <Trophy :service="'Website Development'" :category="''" :place="''" v-observe />
+        <Trophy :service="'Website Development'" :category="''" :place="' '" v-observe />
     </div>
+    <p></p>
     <FooterBar />
 </template>
 <script>
@@ -22,7 +23,6 @@ import Success from '@/components/SucessSection.vue';
 import Faq from '@/components/FaqSection.vue';
 import Service from '@/components/salesfunnel/ServicesSection.vue';
 import Trophy from '@/components/salesfunnel/TrophySection.vue';
-
 import FormBanner from '@/components/salesfunnel/FormBanner.vue';
 import Counter from '@/components/salesfunnel/SalesCounter.vue';
 export default {
@@ -41,6 +41,9 @@ export default {
     },
     data() {
         return {
+            services: '',
+            category: '',
+            place: '',
             links: [
                 {
                     id: 1,
@@ -94,35 +97,84 @@ export default {
             questions: [
                 {
                     id: 1,
-                    question: "Q1. Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                    question: "What is web hosting, and why do I need it?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 2,
-                    question: "Q2. Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                    question: "What is a domain name, and how do I choose one?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 3,
-                    question: "Q3. Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                    question: "How much will it cost to build and maintain a website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 4,
-                    question: "Q4. Is my data secured at saleswik CRM?",
-                    answer: "Yes, your data is completely safe, and important credentails are encripted."
+                    question: "Are there any hidden costs I should be aware of?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 5,
-                    question: "Q5. Can i sync leads form my website to saleswik?",
-                    answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
+                    question: "How will people find my website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 6,
-                    question: "Q6. Can i manage my accounts at saleswik CRM?",
-                    answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
+                    question: "How do I ensure my website is secure?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 7,
+                    question: "What is user experience (UX), and why is it important?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 8,
+                    question: "What if I need to make changes to my website in the future?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 9,
+                    question: "Do I need professional content writing and design services?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 10,
+                    question: "How long will it take to build my website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
             ]
+        }
+    },
+    created() {
+        // Log the route params to debug
+        console.log('Route params:', this.$route.params);
+
+        // Extract the route parameter by the correct name
+        const routeParam = this.$route.params.title; // Use 'slug' if that is the parameter name
+
+        // Check if routeParam is defined
+        if (routeParam) {
+            this.extractParams(routeParam);
+        } else {
+            console.error('Route parameter is undefined');
+        }
+    },
+    methods: {
+        extractParams(paramString) {
+            // Split the string based on ' in ' keyword and then further parse it
+            let parts = paramString.split('-in-');
+            if (parts.length >= 2) {
+                this.services = parts[0].replace(/-/g, ' ');
+                this.category = parts[1].replace(/-/g, ' ');
+
+                // Check if there is a third part for the place
+                if (parts.length > 2) {
+                    this.place = parts.slice(2).join(' ').replace(/-/g, ' ');
+                }
+            }
         }
     }
 }

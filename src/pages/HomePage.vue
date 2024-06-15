@@ -2,93 +2,48 @@
     <div class="">
         <Banner v-observe />
         <div class="" id="second">
-            <LeadManagement :values="values" :title="'Industries we work for'" v-observe />
+            <LeadManagement :values="values" :title="'our Core Values'" v-observe />
         </div>
-        <div class="">
-            <RequestDemo v-observe />
-        </div>
-        <!-- <div class="">
-            <WorkingProcess />
-        </div> -->
-        <div class="">
-            <WhyChooseUs v-observe />
-        </div>
-        <div class="">
-            <KycSection v-observe />
-        </div>
-        <!-- <div class="">
-            <PriceSection v-observe />
-        </div> -->
-        <div class="">
-            <StarterPacks />
-        </div>
-        <div class="">
-            <ImageWithText :title="title" :description="description" :image="image" :points="true" v-observe />
-        </div>
-        <div class="">
-            <SalesFunnel v-observe />
-        </div>
-        <div class="">
-            <CounterSection v-observe />
-        </div>
-        <div class="">
-            <SucessSection v-observe />
-        </div>
-        <div class="">
-            <TestSection v-observe />
-        </div>
-        <div class="">
-            <FaqSection :question="questions" v-observe />
-        </div>
-        <div class="">
-            <WayToShare v-observe />
-        </div>
-        <div class="">
-            <MiniFooter />
-        </div>
+        <RequestDemo v-observe />
+        <StarterPacks /> 
+        <SalesCounter :service="'Years in industry'" :serviceCount="10" :category="'complete projects'" :categoryCount="1000"
+        :place="'happy clients'" :placeCount="900" v-observe/>
+        <AutoScrolling v-observe />
+        <OurService v-observe />
+        <SucessSection v-observe />
+        <Trophy :service="'Website Development'" :category="''" :place="' '" v-observe />
+        <MiniFooter />
         <FooterBar v-observe />
     </div>
 </template>
 
 <script>
 import Banner from '@/components/Banner.vue'
-import KycSection from '@/components/KycSection.vue'
 import SucessSection from '@/components/SucessSection.vue'
-import CounterSection from '@/components/CounterSection.vue'
+import SalesCounter from '@/components/salesfunnel/SalesCounter.vue'
 import FooterBar from '@/components/FooterBar.vue'
-import TestSection from '@/components/TestSection.vue'
-import WayToShare from '@/components/WayToShare.vue'
-import ImageWithText from '@/components/ImageWithText.vue'
-import FaqSection from '@/components/FaqSection.vue'
+import AutoScrolling from '@/components/AutoScrolling.vue'
 import LeadManagement from '@/components/LeadManagement.vue'
-import WhyChooseUs from '@/components/WhyChooseUs.vue'
-// import PriceSection from '@/components/PriceSection.vue'
-import SalesFunnel from '@/components/SalesFunnel.vue'
 import RequestDemo from '@/components/RequestDemo.vue'
 import MiniFooter from '@/components/MiniFooter.vue'
-// import WorkingProcess from '@/components/WorkingProcess.vue'
 import StarterPacks from '@/components/StarterPacks.vue'
+import Trophy from '@/components/salesfunnel/TrophySection.vue';
+import OurService from '@/components/OurService.vue'
 
 export default {
     name: 'HomePage',
     components: {
         Banner,
-        KycSection,
         SucessSection,
-        CounterSection,
+        SalesCounter,
         FooterBar,
-        TestSection,
-        WayToShare,
-        ImageWithText,
-        FaqSection,
+        AutoScrolling,
         LeadManagement,
-        WhyChooseUs,
-        // PriceSection,
-        SalesFunnel,
         RequestDemo,
-        // WorkingProcess,
         StarterPacks,
         MiniFooter,
+        OurService,
+        Trophy
     },
     data() {
         return {

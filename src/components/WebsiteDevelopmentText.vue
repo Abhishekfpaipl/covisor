@@ -120,18 +120,22 @@
         </div>
 
         <div class="container">
-            <h1 class="text-center">Pricing</h1>
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover container-fluid" style="width: 100%">
+            <h1 class="text-center py-4">Website Development Pricing</h1>
+            <div class="table-responsive pb-4">
+                <table class="table table-bordered table-light table-striped" style="width: 100%;">
                     <thead class="border-bottom">
                         <tr>
-                            <th class="text-start"><small>Key Features</small></th>
+                            <th class="text-start">Features <p class="mb-0 small">List</p>
+                            </th>
                             <th scope="col" class="border-end text-center" v-for="plan in plans" :key="plan.id">
-                                <p class="mb-0">{{ plan.title }} <sup>{{ plan.sup }}</sup></p>
+                                <p class="mb-0">{{ plan.title }}</p>
                                 <p class="mb-0 ">
                                     <small class="smaller ">₹</small>
                                     <small class="smaller">{{ plan.price }}</small>
                                     <small class="smaller fw-normal">/-</small>
+                                </p>
+                                <p class="mb-0">
+                                    <small class="fw-light text-decoration-line-through text-dark smaller">{{ plan.mrp }}</small>
                                 </p>
                             </th>
                         </tr>
@@ -163,10 +167,10 @@ export default {
             plans: [
                 {
                     id: 1,
-                    title: "1",
-                    sup: "st",
+                    title: "Lite",
                     description: "Info Website",
-                    price: 999,
+                    price: '999',
+                    mrp:'2,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -190,10 +194,10 @@ export default {
                 },
                 {
                     id: 2,
-                    title: "2",
-                    sup: "nd",
+                    title: "Plus",
                     description: "Business Website",
-                    price: 1499,
+                    price:'1,499',
+                    mrp: '3,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -217,10 +221,10 @@ export default {
                 },
                 {
                     id: 3,
-                    title: "3",
-                    sup: "rd",
+                    title: "Elite",
                     description: "Catalog Website",
-                    price: 2499,
+                    price:'2,499',
+                    mrp: '5,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },
@@ -244,10 +248,10 @@ export default {
                 },
                 {
                     id: 4,
-                    title: "4",
-                    sup: "th",
+                    title: "Pro",
                     description: "Designer Website",
-                    price: 3499,
+                    price: '3,499',
+                    mrp:'7,000',
                     features: [
                         { id: 1, name: "Free Domain", included: true },
                         { id: 2, name: "Email Id", included: true },

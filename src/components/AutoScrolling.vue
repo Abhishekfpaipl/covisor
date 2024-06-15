@@ -1,29 +1,21 @@
 <template>
-    <div class="my-3 py-3">
-        <!-- <button class="toggle" @click="toggleDirection" :class="{ 'toggle--vertical': isVertical }">
-            <span>Toggle scroll axis</span>
-            <svg aria-hidden="true" viewBox="0 0 512 512" width="100" title="arrows-alt-h">
-                <path
-                    d="M377.941 169.941V216H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.568 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296h243.882v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.568 0-33.941l-86.059-86.059c-15.119-15.12-40.971-4.412-40.971 16.97z" />
-            </svg>
-        </button> -->
-        <h1 class="text-center mb-5">SalesWik is loved by people across all industries</h1>
+    <div class="my-3 py-5 text-white" style="background-color: var(--bg-primary)">
+        <h3 class="text-center mb-5 text-capitalize ">we rely on the best to provide the finest service and experience
+        </h3>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
-                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
-                        </div>
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                            alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
-                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
-                        </div>
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                            alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
@@ -32,18 +24,16 @@
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
-                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
-                        </div>
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                            alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
-                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
-                        </div>
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                            alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
@@ -84,6 +74,7 @@
 
 <script>
 export default {
+    name:"AutoScrolling",
     data() {
         return {
             isVertical: false,

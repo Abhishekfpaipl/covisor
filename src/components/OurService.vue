@@ -1,7 +1,8 @@
 <template>
     <div class="" style="background-color: var(--bg-forth);">
-        <div class="container px-3 px-md-0 ">
-            <div class="row d-flex justify-content-center py-5">
+        <div class="container px-3 px-md-0">
+            <h1 class="text-center text-capitalize py-3">Why Choose Us</h1>
+            <div class="row d-flex justify-content-center pb-5 pt-2">
                 <div class="col-lg-4 row row-cols-1 g-3 mt-0">
                     <div v-for="(service, index) in servicesLeft" :key="index" class="col">
                         <div class="d-flex align-items-start">

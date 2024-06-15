@@ -1,50 +1,15 @@
 <template>
     <div>
-        <FormBanner :service="'B2B ecommerce Development'" :category="category" :place="place" v-observe />
+        <FormBanner :service="'B2B Ecommerce Development'" :category="category" :place="place" v-observe />
 
         <LeadManagement :values="features" :title="'Factors, you will love'" v-observe />
-        <div class="container">
-            <h1 class="text-center">Pricing</h1>
-            <div class="table-responsive">
-                <table class="table table-borderless table-hover container-fluid" style="width: 100%">
-                    <thead class="border-bottom">
-                        <tr>
-                            <th></th>
-                            <th scope="col" class="border-end text-center" v-for="plan in plans" :key="plan.id">
-                                <p class="mb-0">{{ plan.title }} <sup>{{ plan.sup }}</sup></p>
-                                <p class="mb-0 ">
-                                    <small class="smaller ">₹</small>
-                                    <small class="smaller">{{ plan.price }}</small>
-                                    <small class="smaller fw-normal">/-</small>
-                                </p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-start border-end">
-                        <tr class="border-bottom" v-for="(feature, index) in plans[0].features" :key="feature.id">
-                            <th class="pb-1 text-start">
-                                <span class="fw-normal smaller">{{ feature.name }}</span>
-                            </th>
-                            <td class="pb-1 text-center" v-for="plan in plans" :key="plan.id">
-                                <i v-if="plan.features[index].included"
-                                    class="bi bi-check2 fs-5 text-success smaller"></i>
-                                <i v-else-if="feature.name === 'Brand Logo' && plan.id === 4"
-                                    class="fw-normal">Basic</i>
-                                <i v-else class="bi bi-dash fs-5 text-secondary"></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
         <Service v-observe />
         <Success v-observe />
         <Faq :questions="questions" v-observe />
-        <Counter :service="'b2b ecommerce Development'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
+        <Counter :service="'B2B Ecommerce Development'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
             :place="'All over the world'" :placeCount="5000" v-observe />
         <OurService v-observe />
-        <Trophy :service="'b2b ecommerce Development'" :category="''" :place="''" v-observe />
+        <Trophy :service="'B2B Ecommerce Development'" :category="''" :place="''" v-observe />
 
     </div>
     <FooterBar />
@@ -75,116 +40,9 @@ export default {
     },
     data() {
         return {
-            plans: [
-                {
-                    id: 1,
-                    title: "1",
-                    sup: "st",
-                    description: "Info Website",
-                    price: 999,
-                    features: [
-                        { id: 1, name: "Free Domain", included: true },
-                        { id: 2, name: "Email Id", included: true },
-                        { id: 3, name: "SSL Certificate", included: true },
-                        { id: 4, name: "Contact Form", included: true },
-                        { id: 5, name: "Mobile Responsive", included: true },
-                        { id: 6, name: "SEO friendly", included: true },
-                        { id: 7, name: "Google Location Map", included: false },
-                        { id: 8, name: "Direct Calling", included: false },
-                        { id: 9, name: "Social Links", included: false },
-                        { id: 10, name: "WhatsApp Connect", included: false },
-                        { id: 11, name: "Payment Detail", included: false },
-                        { id: 12, name: "Business Catalog", included: false },
-                        { id: 13, name: "Content Writing", included: false },
-                        { id: 14, name: "Free Update", included: false },
-                        { id: 15, name: "Brand Logo", included: false },
-                        { id: 16, name: "Development Time", included: false },
-                        { id: 17, name: "Customer Support", included: false },
-                        { id: 18, name: "Renewal Charges", included: false },
-                    ],
-                },
-                {
-                    id: 2,
-                    title: "2",
-                    sup: "nd",
-                    description: "Business Website",
-                    price: 1499,
-                    features: [
-                        { id: 1, name: "Free Domain", included: true },
-                        { id: 2, name: "Email Id", included: true },
-                        { id: 3, name: "SSL Certificate", included: true },
-                        { id: 4, name: "Contact Form", included: true },
-                        { id: 5, name: "Mobile Responsive", included: true },
-                        { id: 6, name: "SEO friendly", included: true },
-                        { id: 7, name: "Google Location Map", included: true },
-                        { id: 8, name: "Direct Calling", included: true },
-                        { id: 9, name: "Social Links", included: false },
-                        { id: 10, name: "WhatsApp Connect", included: false },
-                        { id: 11, name: "Payment Detail", included: false },
-                        { id: 12, name: "Business Catalog", included: false },
-                        { id: 13, name: "Content Writing", included: false },
-                        { id: 14, name: "Free Update", included: false },
-                        { id: 15, name: "Brand Logo", included: false },
-                        { id: 16, name: "Development Time", included: false },
-                        { id: 17, name: "Customer Support", included: false },
-                        { id: 18, name: "Renewal Charges", included: false },
-                    ],
-                },
-                {
-                    id: 3,
-                    title: "3",
-                    sup: "rd",
-                    description: "Catalog Website",
-                    price: 2499,
-                    features: [
-                        { id: 1, name: "Free Domain", included: true },
-                        { id: 2, name: "Email Id", included: true },
-                        { id: 3, name: "SSL Certificate", included: true },
-                        { id: 4, name: "Contact Form", included: true },
-                        { id: 5, name: "Mobile Responsive", included: true },
-                        { id: 6, name: "SEO friendly", included: true },
-                        { id: 7, name: "Google Location Map", included: true },
-                        { id: 8, name: "Direct Calling", included: true },
-                        { id: 9, name: "Social Links", included: true },
-                        { id: 10, name: "WhatsApp Connect", included: true },
-                        { id: 11, name: "Payment Detail", included: true },
-                        { id: 12, name: "Business Catalog", included: true },
-                        { id: 13, name: "Content Writing", included: true },
-                        { id: 14, name: "Free Update", included: true },
-                        { id: 15, name: "Brand Logo", included: false },
-                        { id: 16, name: "Development Time", included: false },
-                        { id: 17, name: "Customer Support", included: false },
-                        { id: 18, name: "Renewal Charges", included: false },
-                    ],
-                },
-                {
-                    id: 4,
-                    title: "4",
-                    sup: "th",
-                    description: "Designer Website",
-                    price: 3499,
-                    features: [
-                        { id: 1, name: "Free Domain", included: true },
-                        { id: 2, name: "Email Id", included: true },
-                        { id: 3, name: "SSL Certificate", included: true },
-                        { id: 4, name: "Contact Form", included: true },
-                        { id: 5, name: "Mobile Responsive", included: true },
-                        { id: 6, name: "SEO friendly", included: true },
-                        { id: 7, name: "Google Location Map", included: true },
-                        { id: 8, name: "Direct Calling", included: true },
-                        { id: 9, name: "Social Links", included: true },
-                        { id: 10, name: "WhatsApp Connect", included: true },
-                        { id: 11, name: "Payment Detail", included: true },
-                        { id: 12, name: "Business Catalog", included: true },
-                        { id: 13, name: "Content Writing", included: true },
-                        { id: 14, name: "Free Update", included: true },
-                        { id: 15, name: "Brand Logo", included: true },
-                        { id: 16, name: "Development Time", included: false },
-                        { id: 17, name: "Customer Support", included: false },
-                        { id: 18, name: "Renewal Charges", included: false },
-                    ],
-                },
-            ],
+            services: '',
+            category: '',
+            place: '',
             features: [
                 {
                     id: 1,
@@ -262,35 +120,74 @@ export default {
             questions: [
                 {
                     id: 1,
-                    question: "Q1. Can i make whatsApp communication from saleswik CRM?",
-                    answer: "Yes, you can do trasactional whatsapp messaging through saleswik CRM. You can also select automated messages and send to the buyers."
+                    question: "What is B2B ecommerce?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!."
                 },
                 {
                     id: 2,
-                    question: "Q2. Is Saleswik CRM gives alert of timely followups?",
-                    answer: "Yes, It gives peding follow-up alerts on dashboard saleswik and sms so that you should not miss any followup"
+                    question: "How will a B2B ecommerce website benefit my business?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 3,
-                    question: "Q3. Can I sync my call log leads to saleswik CRM?",
-                    answer: "Yes, you can sync all your calls in saleswik CRM and convert them into leads."
+                    question: "How much does it cost to develop a B2B ecommerce website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 4,
-                    question: "Q4. Is my data secured at saleswik CRM?",
-                    answer: "Yes, your data is completely safe, and important credentails are encripted."
+                    question: "Do I need special technical knowledge to manage a B2B ecommerce website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 5,
-                    question: "Q5. Can i sync leads form my website to saleswik?",
-                    answer: "Yes, we have API based solutions for all your lead sources and its sync leads in runtime."
+                    question: "How do I ensure security for transactions on a B2B ecommerce website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
                 {
                     id: 6,
-                    question: "Q6. Can i manage my accounts at saleswik CRM?",
-                    answer: "Yes, you can manage your PO, proforma & Tax invoices. You can also manage your credit payment followups & AMC renewal."
+                    question: "Can a B2B ecommerce website integrate with our existing business systems?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 7,
+                    question: "How long does it take to launch a B2B ecommerce website?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
+                },
+                {
+                    id: 8,
+                    question: "What ongoing maintenance does a B2B ecommerce website require?",
+                    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis vitae pariatur omnis iste eius earum enim distinctio libero et harum eaque sapiente nihil atque provident odio voluptate, officiis dolores!"
                 },
             ]
+        }
+    },
+    created() {
+        // Log the route params to debug
+        console.log('Route params:', this.$route.params);
+
+        // Extract the route parameter by the correct name
+        const routeParam = this.$route.params.title; // Use 'slug' if that is the parameter name
+
+        // Check if routeParam is defined
+        if (routeParam) {
+            this.extractParams(routeParam);
+        } else {
+            console.error('Route parameter is undefined');
+        }
+    },
+    methods: {
+        extractParams(paramString) {
+            // Split the string based on ' in ' keyword and then further parse it
+            let parts = paramString.split('-in-');
+            if (parts.length >= 2) {
+                this.services = parts[0].replace(/-/g, ' ');
+                this.category = parts[1].replace(/-/g, ' ');
+
+                // Check if there is a third part for the place
+                if (parts.length > 2) {
+                    this.place = parts.slice(2).join(' ').replace(/-/g, ' ');
+                }
+            }
         }
     }
 }
