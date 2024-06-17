@@ -1,44 +1,43 @@
 <template>
     <div>
-        <div class="my-5">
-            <div class="heading d-flex justify-content-center text-center pt-4">
-                <p class="fs-1">Success Stories of Our Partners</p>
-            </div>
-            <div class="w-100 d-block ">
-                <div class="w-100 overflow-auto d-flex align-items-center hide-scroll" ref="slider">
-                    <div v-for="(review, index) in infiniteReviews" :key="index" @click="showUser(review, index)"
-                        class="btn rounded-circle m-2 mx-3 d-flex" :class="{ selectedDiv: isSelected(review.id) }">
-                        <img :src="review.imgr" alt="User Image">
-                    </div>
-                </div>
-                <div>
-                    <div class="text-center">
-                        <p class="my-1 fw-bold fs-3">{{ selectedReviewData.name }}</p>
-                        <p class="my-1">{{ selectedReviewData.company }}</p>
-                        <ReviewRating :rating="selectedReviewData.rating" />
-                    </div>
-                    <div class="text d-flex justify-content-center text-center">
-                        <!-- <i class="bi bi-chat-quote-fill"></i> -->
-                        <p class="w-75 fs-4">" {{ getSelectedReviewText }} "</p>
-                    </div>
-                </div>
-            </div>
-
+      <div class="my-5">
+        <div class="heading d-flex justify-content-center text-center pt-4">
+          <p class="fs-1">Success Stories of Our Partners</p>
         </div>
+        <div class="w-100 d-block">
+          <div class="w-100 overflow-auto d-flex align-items-center hide-scroll" ref="slider">
+            <div v-for="(review, index) in infiniteReviews" :key="index" @click="showUser(review, index)"
+              class="btn rounded-circle m-2 mx-3 d-flex" :class="{ selectedDiv: isSelected(review.id) }">
+              <img :src="review.imgr" alt="User Image">
+            </div>
+          </div>
+          <div>
+            <div class="text-center">
+              <p class="my-1 fw-bold fs-3">{{ selectedReviewData.name }}</p>
+              <p class="my-1">{{ selectedReviewData.company }}</p>
+              <ReviewRating :rating="selectedReviewData.rating" />
+            </div>
+            <div class="text d-flex justify-content-center text-center">
+              <p class="w-75 fs-4">" {{ getSelectedReviewText }} "</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</template>
-
-<script>
-import ReviewRating from "@/components/ReviewRating.vue"
-export default {
-    name: 'SucessSection',
+  </template>
+  
+  <script>
+  import ReviewRating from "@/components/ReviewRating.vue";
+  
+  export default {
+    name: "SuccessSection",
     components: {
-        ReviewRating,
+      ReviewRating,
     },
     data() {
-        return {
-            selectedReview: 0,
-            reviews: [
+      return {
+        selectedReview: 0,
+        reviews: [
                 {
                     id: 1,
                     show: false,
@@ -166,106 +165,95 @@ export default {
                     text: "Saleswik has helped us to decentralize information. Now all the team has access to the documents and sales information. We no longer have the problem that some documents is stored on the PC of a teammate who is not accessible at the time."
                 },
             ],
-        };
+      };
     },
     computed: {
-        infiniteReviews() {
-            const reviews = this.reviews.slice();
-            return reviews.concat(reviews);
-        },
-        getSelectedReviewText() {
-            return this.infiniteReviews[this.selectedReview].text;
-        },
-        selectedReviewData() {
-            return this.infiniteReviews[this.selectedReview];
-        }
+      infiniteReviews() {
+        // Double the reviews array to simulate infinite scrolling
+        const reviews = this.reviews.slice();
+        return reviews.concat(reviews);
+      },
+      getSelectedReviewText() {
+        return this.infiniteReviews[this.selectedReview].text;
+      },
+      selectedReviewData() {
+        return this.infiniteReviews[this.selectedReview];
+      },
     },
     mounted() {
-        this.reviews[this.selectedReview].show = true;
-        this.scrollToCenter();
+      this.reviews[this.selectedReview].show = true;
+      this.scrollToCenter();
     },
     methods: {
-        isSelected(clickedReviewId) {
-            return clickedReviewId === this.infiniteReviews[this.selectedReview].id;
-        },
-        showUser(review, reviewIndex) {
-            this.selectedReview = reviewIndex;
-            let userIndex = this.reviews.indexOf(review);
-            this.reviews.forEach(user_review => {
-                user_review.show = false
-            });
-            this.reviews[userIndex].show = true
-            this.scrollToCenter();
-        },
-        scrollToCenter() {
-            const slider = this.$refs.slider;
-            const selectedElement = slider.children[this.selectedReview];
-            const scrollLeft =
-                selectedElement.offsetLeft - (slider.offsetWidth - selectedElement.offsetWidth) / 1.8;
-            slider.scrollLeft = scrollLeft;
-        },
-    }
-}
-</script>
-
-<style scoped>
-/* Your existing styles */
-</style>
-
-
-<style scoped>
-.btn.selectedDiv {
+      isSelected(clickedReviewId) {
+        return clickedReviewId === this.infiniteReviews[this.selectedReview].id;
+      },
+      showUser(review, reviewIndex) {
+        this.selectedReview = reviewIndex % this.reviews.length; // Ensure index wraps around
+        this.scrollToCenter();
+      },
+      scrollToCenter() {
+        const slider = this.$refs.slider;
+        const selectedElement = slider.children[this.selectedReview];
+        const scrollLeft =
+          selectedElement.offsetLeft -
+          (slider.offsetWidth - selectedElement.offsetWidth) / 1.8;
+        slider.scrollLeft = scrollLeft;
+      },
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .btn.selectedDiv {
     border: 2px solid red;
-}
-
-img {
+  }
+  
+  img {
     width: 80px;
     height: 80px;
-}
-
-.btn.selectedDiv img {
+  }
+  
+  .btn.selectedDiv img {
     width: 120px !important;
     height: 120px !important;
-}
-
-.btn {
+  }
+  
+  .btn {
     --bs-btn-padding-x: 5px;
     --bs-btn-padding-y: 5px;
-}
-
-#style-4 {
+  }
+  
+  #style-4 {
     scroll-behavior: smooth;
     overflow-x: scroll;
-}
-
-#style-4::-webkit-scrollbar {
+  }
+  
+  #style-4::-webkit-scrollbar {
     display: none;
-}
-
-.hide-scroll {
+  }
+  
+  .hide-scroll {
     overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
+  }
+  
+  ::-webkit-scrollbar {
     width: 10px;
-    /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
+  }
+  
+  ::-webkit-scrollbar-track {
     background: #ffffff;
-    /* Color of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
+  }
+  
+  ::-webkit-scrollbar-thumb {
     background: rgb(134, 132, 132)4f4;
-    /* Color of the scrollbar thumb */
     border-radius: 5px;
-    /* Rounded corners of the thumb */
     width: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
     background: #f5e5e5;
     width: 10px;
-}
-</style>
+  }
+  </style>
+  

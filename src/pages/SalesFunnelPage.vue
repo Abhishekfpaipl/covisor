@@ -24,7 +24,7 @@ import Success from '@/components/SucessSection.vue';
 import Faq from '@/components/FaqSection.vue';
 import Service from '@/components/salesfunnel/ServicesSection.vue';
 import Counter from '@/components/salesfunnel/SalesCounter.vue';
-import Trophy from '@/components/salesfunnel/TrophySection.vue';
+import Trophy from '@/components/salesfunnel/FameFoot.vue';
 
 export default {
     name: 'SalesFunnelPage',

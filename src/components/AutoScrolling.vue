@@ -14,17 +14,17 @@
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain; filter: invert(1)"
                             alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
             </div>
 
-            <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
+            <!-- <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;"
                             alt="">
                         <span>{{ link.name }}</span>
                     </div>
@@ -32,12 +32,12 @@
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;"
                             alt="">
                         <span>{{ link.name }}</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
@@ -67,8 +67,6 @@
                 </div>
             </div> -->
         </article>
-
-        <!-- Your SVG definitions here -->
     </div>
 </template>
 
@@ -82,44 +80,64 @@ export default {
             links: [
                 {
                     id: 1,
-                    name: 'Digital Marketing',
-                    image: 'img/scroll/digi.svg'
+                    name: 'Amazon',
+                    image: '/img/companies/amazon.png'
                 },
                 {
                     id: 2,
-                    name: 'Education',
-                    image: 'img/scroll/education.svg'
+                    name: 'Apple',
+                    image: '/img/companies/apple.png'
                 },
                 {
                     id: 3,
-                    name: 'Finance',
-                    image: 'img/scroll/finance.svg'
+                    name: 'Aws',
+                    image: '/img/companies/aws.png'
                 },
                 {
                     id: 4,
-                    name: 'Healthcare',
-                    image: 'img/scroll/healthcare.svg'
+                    name: 'Facebook',
+                    image: '/img/companies/fb.png'
                 },
                 {
                     id: 5,
-                    name: 'Hospitality',
-                    image: 'img/scroll/hospitality.svg'
+                    name: 'Google',
+                    image: '/img/companies/google.png'
                 },
                 {
                     id: 6,
-                    name: 'Insurance',
-                    image: 'img/scroll/insurance.svg'
+                    name: 'Meta',
+                    image: '/img/companies/meta.png'
                 },
                 {
                     id: 7,
-                    name: 'Real Estate',
-                    image: 'img/scroll/realestate.svg'
+                    name: 'Microsoft',
+                    image: '/img/companies/microsoft.png'
                 },
+                // {
+                //     id: 8,
+                //     name: 'Remax',
+                //     image: '/img/companies/remax.png'
+                // },
+                // {
+                //     id: 9,
+                //     name: 'Tesla',
+                //     image: '/img/companies/tesla.png'
+                // },
+                // {
+                //     id: 10,
+                //     name: 'Ubisoft',
+                //     image: '/img/companies/ubisoft.png'
+                // },
                 {
-                    id: 8,
-                    name: 'Service',
-                    image: 'img/scroll/service.svg'
+                    id: 11,
+                    name: 'Vodafone',
+                    image: '/img/companies/vodafone.png'
                 },
+                // {
+                //     id: 12,
+                //     name: 'Yelp',
+                //     image: '/img/companies/yelp.png'
+                // },
             ]
         };
     },
@@ -143,32 +161,6 @@ export default {
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));
 }
-
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --color-text: papayawhip;
-        --color-bg: navy;
-        --color-bg-accent: #2626a0;
-    }
-} */
-
-* {
-    box-sizing: border-box;
-}
-
-/* body {
-    display: grid;
-    align-content: center;
-    overflow: hidden;
-    gap: var(--gap);
-    width: 100%;
-    min-height: 100vh;
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text);
-    background-color: var(--color-bg);
-} */
 
 .marquee {
     display: flex;
@@ -236,24 +228,6 @@ export default {
     }
 }
 
-/* Element styles */
-/* .marquee svg {
-    display: grid;
-    place-items: center;
-    width: var(--size);
-    fill: var(--color-text);
-    background: var(--color-bg-accent);
-    aspect-ratio: 16/9;
-    padding: calc(var(--size) / 10);
-    border-radius: 0.5rem;
-}
-
-.marquee--vertical svg {
-    aspect-ratio: 1;
-    width: calc(var(--size) / 1.5);
-    padding: calc(var(--size) / 6);
-} */
-
 /* Parent wrapper */
 .wrapper {
     display: flex;
@@ -303,22 +277,6 @@ export default {
     animation: fade 400ms 4s ease-out forwards;
     user-select: none;
 }
-
-/* .toggle svg {
-    --size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: var(--size);
-    height: var(--size);
-    fill: currentcolor;
-    transform: translate(-50%, -50%);
-    transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.toggle--vertical svg {
-    transform: translate(-50%, -50%) rotate(-90deg);
-} */
 
 @keyframes fade {
     to {

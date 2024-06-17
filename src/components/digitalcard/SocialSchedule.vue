@@ -1,8 +1,8 @@
 <template>
-    <div class="container my-3 py-3">
-        <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Social ~</span></p>
+    <div class="container py-3">
+        <!-- <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Social ~</span></p> -->
 
-        <div class="row d-flex justify-content-center ">
+        <!-- <div class="row d-flex justify-content-center ">
             <div v-for="(contact, index) in folows" :key="index" class="col-3 col-md-1 py-2">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="rounded-circle border border-5 d-flex align-items-center justify-content-center"
@@ -14,7 +14,7 @@
                 </div>
                 <p class="text-center mt-2 fw-bold">{{ contact.name }}</p>
             </div>
-        </div>
+        </div> -->
 
         <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Schedule ~</span></p>
         <div class="d-flex justify-content-center">

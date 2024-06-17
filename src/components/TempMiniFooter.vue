@@ -1,9 +1,9 @@
 <template>
-    <div class="mt-5">
+    <div class="container mt-5">
         <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item" v-for="(link, index) in links" :key="index">
+            <div class="accordion-item my-4 border-0" v-for="(link, index) in links" :key="index">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-capitalize fs-2 bg-light border" type="button"
+                    <button class="accordion-button collapsed text-capitalize fs-4 bg-light border" type="button"
                         data-bs-toggle="collapse" :data-bs-target="'#flush-collapseOne' + index" aria-expanded="false"
                         :aria-controls="'flush-collapseOne' + index">
                         <span class="text-center">
@@ -14,8 +14,8 @@
                 <div :id="'flush-collapseOne' + index" class="accordion-collapse collapse show pb-5"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-wrap">
-                        <router-link :to="link.link + sub" v-for="(sub, subIndex) in link.sublinks"
-                            :key="subIndex" class="text-decoration-none text-dark">
+                        <router-link to="" v-for="(sub, subIndex) in link.sublinks"
+                            :key="subIndex" class="text-decoration-none text-dark text-capitalize">
                             <span>&nbsp; {{ sub }} &nbsp;|</span>
                         </router-link>
 
@@ -32,9 +32,16 @@ export default {
         return {
             links: [
                 {
-                    id: 1,
-                    name: "We are loved by people across all industries",
-                    link:'/sales-category/',
+                    id:1,
+                    name:'we are loved by peoples',
+                    sublinks: [
+                        "men","women", "children","mother","father","student","professional","executive","adult","all types of people","athlete","other"
+                    ]
+                },
+                {
+                    id: 2,
+                    name: "We are working for industries",
+                    // link:'/sales-category/',
                     sublinks: [
                         'Body Massage Centres',
                         'Cinema Halls', 'Schools', 'Beauty Spas', 'Dermatologists', 'Hospitals', 'Malls',
@@ -54,9 +61,9 @@ export default {
                     ],
                 },
                 {
-                    id: 2,
-                    name: "Our Top clients around the world",
-                    link:'/sales-place/',
+                    id: 3,
+                    name: "we are working in cities",
+                    // link:'/sales-place/',
                     sublinks: [
                         'Delhi', 'Mumbai', 'Bangalore', 'Hyderabad', 'Chennai', 'Pune', 'Ahmedabad', 'Kolkata', 'Jaipur',
                         'Chandigarh', 'Coimbatore', 'Lucknow', 'Surat', 'Indore', 'Patna', 'Nagpur', 'Ernakulam', 'Bhopal',

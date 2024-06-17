@@ -1,5 +1,5 @@
 <template>
-    <div class="my-3 py-3">
+    <div class=" py-3">
         <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Gallery ~</span></p>
         <div class="container" id="imageCollage" ref="imageCollage">
             <div class="collageImage border" v-for="(image, index ) in images" :key="index">

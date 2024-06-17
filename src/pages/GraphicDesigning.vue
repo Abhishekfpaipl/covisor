@@ -4,13 +4,13 @@
 
         <LeadManagement :values="features" :title="'Factors, you will love'" v-observe />
 
-        <Service v-observe />
+        <AutoScrolling v-observe />
         <Success v-observe />
         <Faq :questions="questions" v-observe />
         <Counter :service="'Graphic Designing'" :serviceCount="2000" :category="'India'" :categoryCount="1500"
             :place="'All over the world'" :placeCount="5000" v-observe />
         <OurService v-observe />
-        <Trophy :service="'Graphic Designing'" :category="''" :place="''" v-observe />
+        <FameFoot :service="'Graphic Designing'" :category="''" :place="''" v-observe />
 
     </div>
     <FooterBar />
@@ -21,11 +21,11 @@ import LeadManagement from '@/components/LeadManagement.vue'
 import FooterBar from '@/components/FooterBar.vue'
 import OurService from '@/components/OurService.vue'
 import Success from '@/components/SucessSection.vue';
-import Faq from '@/components/FaqSection.vue';
-import Service from '@/components/salesfunnel/ServicesSection.vue';
-import Trophy from '@/components/salesfunnel/TrophySection.vue';
+import Faq from '@/components/FaqSection.vue'; 
+import FameFoot from '@/components/salesfunnel/FameFoot.vue';
 import FormBanner from '@/components/salesfunnel/FormBanner.vue';
 import Counter from '@/components/salesfunnel/SalesCounter.vue';
+import AutoScrolling from '@/components/AutoScrolling.vue';
 export default {
     name: "GraphicDesigning",
     components: {
@@ -34,10 +34,10 @@ export default {
         OurService,
         FormBanner,
         Success,
-        Faq,
-        Service,
+        Faq, 
         Counter,
-        Trophy,
+        FameFoot,
+        AutoScrolling,
     },
     data() {
         return {

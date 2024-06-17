@@ -33,10 +33,11 @@
                         <router-link :to="pack.link + pack.price" class="btn border btn-light text-capitalize px-4">
                             Know More
                         </router-link>
-                        <router-link :to="pack.link" class="btn text-capitalize px-4 text-white btn-success">
+                        <a :href="'https://wa.me/8860012001?text=' + encodeURIComponent('Hello, I want to get your ' + pack.title + ' service')"
+                            class="btn text-capitalize px-4 text-white btn-success">
                             <i class="bi bi-whatsapp"></i>
                             <span class="ms-2">Enquiry</span>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -61,7 +62,7 @@ export default {
                         "Single Email Account",
                         "Shared Domain",
                         "Shared Storage",
-                    ], 
+                    ],
                 },
                 {
                     slug: "ecommerce-development",
@@ -75,7 +76,7 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ], 
+                    ],
                 },
                 {
                     slug: "ecommerce-development",
@@ -89,7 +90,7 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ], 
+                    ],
                 },
                 {
                     slug: "ecommerce-development",
@@ -103,7 +104,7 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ], 
+                    ],
                 },
                 {
                     slug: "ecommerce-development",
@@ -117,7 +118,7 @@ export default {
                         "Unlimited Page Website",
                         "Google Analytics",
                         "Domain & Hosting"
-                    ], 
+                    ],
                 },
                 {
                     slug: "digital-marketing",
@@ -131,7 +132,7 @@ export default {
                         "Multi Page Website",
                         "Multiple Email Account",
                         "Domain & Hosting",
-                    ], 
+                    ],
                 },
             ]
         }

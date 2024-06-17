@@ -98,9 +98,19 @@ const routes = [
   },
 
   {
-    path: "/demo",
-    name: "DemoPage",
-    component: () => import('@/pages/DemoPage.vue')
+    path: "/template-one",
+    name: "TemplateOne",
+    component: () => import('@/pages/TemplateOne.vue')
+  },
+  {
+    path: "/template-two",
+    name: "TemplateTwo",
+    component: () => import('@/pages/TemplateTwo.vue')
+  },
+  {
+    path: "/template-three",
+    name: "TemplateThree",
+    component: () => import('@/pages/TemplateThree.vue')
   },
   {
     path: "/sales-category/:category",

@@ -1,5 +1,5 @@
 <template>
-    <div class="container my-3 py-3">
+    <div class="container py-3">
         <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Collections ~</span></p>
         <div class="row row-cols-3 row-cols-md-6 g-1">
             <div class="col" v-for="(collection, key) in collections" :key="key">

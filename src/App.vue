@@ -1,17 +1,20 @@
 <template>
-  <DashboardNav v-if="!hide" />
-  <router-view />
+  <TopNav v-if="!hide"/>
+  <!-- <DashboardNav v-if="!hide" /> --> 
+     <router-view /> 
 </template>
 <script>
-import DashboardNav from '@/components/DashboardNav.vue';
+// import DashboardNav from '@/components/DashboardNav.vue';
+import TopNav from '@/components/TopNav.vue';
 export default {
   name: 'App',
   components: {
-    DashboardNav,
+    // DashboardNav,
+    TopNav,
   },
   computed: {
     hide() {
-      const hiddenPages = ['DemoPage1', 'ThankYou', 'LoginPage', 'RegistrationPage']
+      const hiddenPages = ['DemoPage1', 'ThankYou', 'LoginPage', 'RegistrationPage','TemplateOne','TemplateTwo','TemplateThree']
       return hiddenPages.includes(this.$route.name)
     },
   }
